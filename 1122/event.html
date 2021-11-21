@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="loadEvent()" onunload="unloadEvent()">
+<script>
+    function loadEvent(){
+        alert("페이지가 로드되었습니다.");
+    }
+    function unloadEvent(){
+        alert("페이지가 언로드되었습니다.");
+    }
+    function clickEvent1(){
+        alert("버튼 1을 클릭하였습니다.");
+
+    }
+    function clickEvent2(){
+        alert("버튼 2를 클릭하였습니다")
+    }
+    function focusEvent(){
+        alert("Focus 이벤트");
+    }
+    function blurEvent(){
+        console.log("Blur 이벤트");
+    }
+</script>
+<form>
+    <input type="button" value="버튼 1" onclick="clickEvent1()">
+    <input type="button" value="버튼 2" onclick="clickEvent2()">
+    <input type="button" value="버튼 3" onclick="focusEvent()">
+</form>
+</body>
+</html>
